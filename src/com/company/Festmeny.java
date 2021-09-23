@@ -48,4 +48,21 @@ public class Festmeny {
         this.elkelt = elkelt;
     }
 
+    public void licit(){
+        if(this.elkelt != true)
+        {
+            if(licitekSzama == 0)
+            {
+                this.legmagasabbLicit=100;
+                this.licitekSzama++;
+                this.legutolsoLicitIdeje = LocalDateTime.now();
+            }
+            else
+            {
+                this.legmagasabbLicit *= 1.1;
+                this.licitekSzama++;
+                this.legutolsoLicitIdeje = LocalDateTime.now();
+            }
+        }
+    }
 }
