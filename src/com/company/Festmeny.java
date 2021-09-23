@@ -20,4 +20,32 @@ public class Festmeny {
         this.elkelt = false;
     }
 
+    public String getFesto() {
+        return festo;
+    }
+
+    public String getStilus() {
+        return stilus;
+    }
+
+    public int getLicitekSzama() {
+        return licitekSzama;
+    }
+
+    public int getLegmagasabbLicit() {
+        return legmagasabbLicit;
+    }
+
+    public LocalDateTime getLegutolsoLicitIdeje() {
+        return legutolsoLicitIdeje;
+    }
+
+    public boolean isElkelt() {
+        return elkelt;
+    }
+
+    public void setElkelt(boolean elkelt) {
+        this.elkelt = elkelt;
+    }
+
 }
